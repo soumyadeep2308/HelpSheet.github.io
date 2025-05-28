@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style Sheet Link -->
+     <link rel="stylesheet" href="CSS/HTML-style.css">
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>HelpSheet</title>
+</head>
+
+<body>
+
+    <div class="navigationBar">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 style="color: #fff; margin-bottom: 0;">Help<span style="color: #ff9d00;">Sheet</span></h1>
+                    <p style="color: #f0f0f0;">Remind Again</p>
+                </div>
+                <div class="col navElements" >
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="/HTML/javaScript.html">JavaScript</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="htmlBody">
+
+        <div class="container">
+            <h2>HTML Starter Template</h2>
+            <p>Needs to create a basic structure of a HTML file</p>
+            <pre>
+                <code>
+&lt!DOCTYPE html&gt
+&lthtml lang="e
+
+    &lthead&gt
+        &ltmeta charset="UTF-8"&gt
+        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+        &lttitle&gtDocument&lt/title&gt
+    &lt/head&gt
+
+    &ltbody&gt
+    
+    &lt/body&gt
+
+&lt/html&gt</code>
+            </pre>
+            <h4>Explain :</h4>
+            <ul>
+                <li>The <span style="color: #d16201">&lt!DOCTYPE html&gt</span> declaration defines that this document is an HTML5 documents</li>
+                <li>The <span style="color: #d16201">&lthtml&gt</span> element is the root element of an HTML page</li>
+                <li>The <span style="color: #d16201">&lthead></span> element contains meta information about the HTML page</li>
+                <li>The <span style="color: #d16201">&lttitle></span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+                <li>The <span style="color: #d16201">&ltbody></span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h2>HTML Headings</h2>
+            <p>HTML headings are defined with the <span style="color: #d16201">&lth1></span> to <span style="color: #d16201">&lth6></span> tags</p>
+            <pre>
+                <code>
+<span style="font-size: 2em;">&lth1&gtHEADINGS&lt/h1&gt</span>
+<span style="font-size: 1.5em;">&lth2&gtHEADINGS&lt/h2&gt</span>
+<span style="font-size: 1.17em;">&lth3&gtHEADINGS&lt/h3&gt</span>
+<span style="font-size: 1em;">&lth4&gtHEADINGS&lt/h4&gt</span>
+<span style="font-size: 0.83em;">&lth5&gtHEADINGS&lt/h5&gt</span>
+<span style="font-size: 0.67em;">&lth6&gtHEADINGS&lt/h6&gt</span></code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <h2>HTML Paragraphs</h2>
+            <p>HTML paragraphs are defined with the <span style="color: #d16201">&ltp&gt</span> tag</p>
+            <pre>
+                <code>
+<span>&ltp&gtThis is a paragraph.&lt/p&gt</span></code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <h2>HTML Links</h2>
+            <p style="margin-bottom: 0;">HTML links are defined with the <span style="color: #d16201">&lta&gt</span> tag</p>
+            <p style="margin-top: 0;">The link's destination is specified in the <span style="color: #d16201">href</span> attribute. </p>
+            <pre>
+                <code>
+<span>&lta href="www.google.com"&gtThis is a Link&lt/a&gt</span></code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <h2>HTML Images</h2>
+            <p style="margin-bottom: 0;">HTML images are defined with the <span style="color: #d16201">&ltimg&gt</span> tag</p>
+            <p style="margin-top: 0;">The source file (src), alternative text (alt), width, and height are provided as attributes</p>
+            <pre>
+                <code>
+<span>&ltimg src="google.jpg" alt="google.com" width="104" height="142"&gt</span></code>
+            </pre>
+        </div>
+
+        <div class="container htmlForm">
+            <h2>HTML Form</h2>
+            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing</p>
+            <h4>Example :</h4>
+            <div style="background-color: #d6d6d6; padding: 2%; margin-bottom: 40px;">
+                <form action="#">
+                    <label for="name">Your Full Name</label><br>
+                    <input type="text" name="" id=""><br>
+                    <label for="number">Your Number</label><br>
+                    <input type="tel" name="" id=""><br>
+                    <label for="messege">Type your messege</label><br>
+                    <textarea name="" id="" rows="4" cols="40" style="resize: none;"></textarea><br>
+                    <input type="submit" name="" id="">
+                </form>
+            </div>
+
+            <pre>
+                <code>
+&ltform action="#"&gt
+    &ltlabel for="name"&gtYour Full Name&lt/label&gt&ltbr&gt
+    &ltinput type="text" name="" id=""&gt&ltbr&gt
+    &ltlabel for="number"&gtYour Number&lt/label&gt&ltbr&gt
+    &ltinput type="tel" name="" id=""&gt&ltbr&gt
+    &ltlabel for="messege"&gtType your messege&lt/label&gt&ltbr&gt
+    &lttextarea name="" id="" rows="4" cols="40" style="resize: none;"&gt&lt/textarea&gt&ltbr&gt
+    &ltinput type="submit" name="" id=""&gt
+&lt/form&gt</code>
+            </pre>
+
+            <h4 style="margin-top: 40px;">Some types Of <span style="color: #d16201">&ltinput&gt</span> tags :</h4>
+            <table>
+                <tr style="background-color: #dbdbdb;">
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&ltinput type="text"&gt</td>
+                    <td>Displays a single-line text input field</td>
+                </tr>
+                <tr style="background-color: #dbdbdb;">
+                    <td>&ltinput type="radio"&gt</td>
+                    <td>Displays a radio button (for selecting one of many choices)</td>
+                </tr>
+                <tr>
+                    <td>&ltinput type="checkbox"&gt</td>
+                    <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                </tr>
+                <tr style="background-color: #dbdbdb;">
+                    <td>&ltinput type="submit"&gt</td>
+                    <td>Displays a submit button (for submitting the form)</td>
+                </tr>
+                <tr>
+                    <td>&ltinput type="submit"&gt</td>
+                    <td>Displays a clickable button</td>
+                </tr>
+            </table>
+
+            <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">Explore more tags</a>
+
+        </div>
+
+        <div class="container">
+            <h2>HTML Formating Elements</h2>
+            <p>Formatting elements were designed to display special types of text</p>
+
+            <ul>
+                <li><span style="color: #d16201">&ltb&gt</span> - Bold text</li>
+                <li><span style="color: #d16201">&ltstrong&gt</span> - Important text</li>
+                <li><span style="color: #d16201">&lti&gt</span> - Italic text</li>
+                <li><span style="color: #d16201">&ltem&gt</span> - Emphasized text</li>
+                <li><span style="color: #d16201">&ltmark&gt</span> - Marked text</li>
+                <li><span style="color: #d16201">&ltsmall&gt</span> - Smaller text</li>
+                <li><span style="color: #d16201">&ltdel&gt</span> - Deleted text</li>
+                <li><span style="color: #d16201">&ltins&gt</span> - Inserted text</li>
+                <li><span style="color: #d16201">&ltsub&gt</span> - Subscript text</li>
+                <li><span style="color: #d16201">&ltsup&gt</span> - Superscript text</li>
+            </ul>
+        
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

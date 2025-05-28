@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpSheet-JavaScript</title>
+
+    <!-- style.css linked here -->
+    <link rel="stylesheet" href="/CSS/JavaScript-style.css">
+
+    <!-- Bootstrap CSS linked here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="navigationBar">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 style="color: #fff; margin-bottom: 0;">Help<span style="color: #ff9d00;">Sheet</span></h1>
+                    <p style="color: #f0f0f0;">Remind Again</p>
+                </div>
+                <div class="col navElements">
+                    <a href="/index.html">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="#">JavaScript</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBody">
+
+        <div class="container">
+
+            <h2>What is JavaScript ?</h2>
+            <p>JavaScript is a scripting or programming language that allows
+                you to implement complex features on web
+                pages.
+            </p>
+            <p>Every time a web page does more than just sit there and
+                display static information for you to look at —
+                displaying timely content updates, interactive maps,
+                animated 2D/3D graphics, scrolling video jukeboxes,
+                etc.
+            </p>
+            <ul>
+                <li>JavaScript is the programming language of the web.</li>
+                <li>It can update and change both HTML and CSS.</li>
+                <li>It can calculate, manipulate and validate data.
+
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="container variableContainer">
+
+            <h2>JavaScript Variables</h2>
+            <p>A variable is a container for a value, like a number we might
+                use in a sum, or a string that we might use
+                as part of a sentence.</p>
+
+            <div class="codeExampleContainer">
+                let x = 58;<span class="comment"> //type : Number</span><br>
+                var y = "Hello!";<span class="comment"> //type :
+                    String</span><br>
+                const z = true;<span class="comment"> //type :
+                    Boolean</span></code><br>
+            </div>
+
+            <p class="Note"><b>NOTE:</b></p>
+            <p class="Note"><span style="color: #d16201">var</span> is
+                function-scoped. Variables declared with <span style="color: #d16201">var</span> are accessible within
+                the
+                entire function they are
+                declared in (or globally if declared outside any function).</p>
+            <p class="Note"><span style="color: #d16201">let</span> and <span style="color: #d16201">const</span> are
+                block-scoped. Variables declared with <span style="color: #d16201">let</span> or <span
+                    style="color: #d16201">const</span> are only accessible
+                within the block
+                (e.g., within curly braces <span style="color: #d16201">{
+                    }</span>) where they are defined.</p>
+
+        </div>
+
+        <div class="container">
+
+            <h2>JavaScript Data Types</h2>
+            <p>JavaScript has 8 basic data types. They are categorized as
+                primitive and non-primitive.</p>
+
+            <h4>Primitive Data Type : </h4>
+            <ul>
+                <li><b>String:</b> Represents textual data, enclosed in single
+                    or double quotes (e.g., "hello",
+                    'world').</li>
+                <li><b>Number:</b> Represents numeric values, including integers
+                    and floating-point numbers (e.g., 10,
+                    3.14).</li>
+                <li><b>BigInt:</b> Represents integers of arbitrary precision,
+                    allowing for the storage of very large
+                    numbers.</li>
+                <li><b>Boolean:</b> Represents logical values, either true or
+                    false.</li>
+                <li><b>Undefined:</b> Represents a variable that has been
+                    declared but has not been assigned a value.
+                </li>
+                <li><b>Null:</b> Represents the intentional absence of a
+                    value.</li>
+                <li><b>Symbol:</b> Represents a unique and immutable value,
+                    often used as object property keys
+                    (introduced in ES6).</li>
+            </ul>
+
+            <h4>Non-Primitive Data Types</h4>
+            <ul>
+                <li><b>Object:</b> Represents a collection of key-value pairs,
+                    used to store more complex data
+                    structures. Arrays, functions, and other objects are
+                    technically types of objects.</li>
+                <ul>
+                    <li><b>Array:</b> Ordered list of values, which can hold
+                        different data types.</li>
+                    <li><b>Function:</b> Block of code designed to perform a
+                        specific task.</li>
+                </ul>
+            </ul>
+
+            <div class="codeExampleContainer">
+                let str = "Hello"; <span class="comment">// string</span><br>
+                let num = 10; <span class="comment">// number</span><br>
+                let bigInt = 1234567890123456789012345678901234567890n <span class="comment">// bigint</span><br>
+                let bool = true; <span class="comment">// boolean</span><br>
+                let undef = undefined; <span class="comment">//
+                    undefined</span><br>
+                let nul = null; <span class="comment">// null</span><br>
+                let sym = Symbol("description"); <span class="comment">//
+                    symbol</span><br>
+                let obj = { name: "John", age: 30 }; <span class="comment">//
+                    object</span><br>
+                let arr = [1, "two", true]; <span class="comment">//
+                    array</span><br>
+                function myFunction() {<br>
+                return "Hello from function";<br>
+                } <span class="comment">// function</span>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <h2>JavaScript Conditionals</h2>
+            <p>Conditional statements in JavaScript allow for different code
+                blocks to be executed depending on whether
+                a specified condition evaluates to true or false.</p>
+
+            <h4>if-else Statements</h4>
+            <ul>
+                <li>
+                    <p><b>Basic if-else syntax</b></p>
+                    <div class="codeExampleContainer">
+                        if(condition){<br>
+                        <span class="comment">//execute if the condition is
+                            true</span><br>
+                        }<br>
+                        else{<br>
+                        <span class="comment">//run some other code
+                            instead</span><br>
+                        }
+                    </div>
+                </li>
+                <li>
+                    <p><b>Real life Example</b></p>
+                    <div class="codeExampleContainer">
+                        let num1 = 20;<br>
+                        let num2 = 60;<br><br>
+                        if(num1>num2){<br>
+                        console.log("Number1 is greater than Number2");<br>
+                        }<br>
+                        else{<br>
+                        console.log("Number2 is greater than Number1");<br>
+                        }
+                    </div>
+                </li>
+            </ul>
+
+            <h4>Comprison Operators</h4>
+            <p>Comparison operators are used to test the conditions inside our
+                conditional statements.</p>
+
+            <ul>
+                <li><span style="color: #d16201">===</span> and <span style="color: #d16201">!==</span> - test if one
+                    value is
+                    identical to, or not identical to,
+                    another (including data type).</li>
+                <li><span style="color: #d16201">==</span> and <span style="color: #d16201">!=</span> - test if one
+                    value is
+                    identical to, or not identical to,
+                    another (ignore data type).</li>
+                <li><span style="color: #d16201">
+                        &lt </span>and <span style="color: #d16201">></span> - test if one value is less
+                    than or greater than another.</li>
+                <li><span style="color: #d16201">
+                        &lt= </span>and <span style="color: #d16201">>=</span> - test if one value
+                    is less than or equal to, or greater than or
+                    equal to, another.</li>
+            </ul>
+
+            <h4>Logical operators: AND, OR and NOT</h4>
+            <p>If you want to test multiple conditions without writing nested if...else statements, logical operators
+                can help you.</p>
+            <ul>
+                <li><span style="color: #d16201">&&</span> - AND; allows you to chain together two or more expressions
+                    so that all of them have to individually evaluate to true for the whole expression to return true.
+                </li>
+                <li><span style="color: #d16201">||</span> - OR; allows you to chain together two or more expressions so
+                    that one or more of them have to individually evaluate to true for the whole expression to return
+                    true.</li>
+            </ul>
+
+            <div class="codeExampleContainer">
+
+                let num1 = 250;<br>
+                let num2 = 600;<br>
+                let num3 = 60;<br><br>
+                if(num1===num2 && num1>num3){ <span class="comment">// both the contions must be true</span><br>
+                num4 = num1 + num2;<br>
+                console.log(`${num4} is the addition of the first two numbers`);<br>
+                }<br>
+                else if(num2===num3 || num1&ltnum3){ <span class="comment">// at least one of the contions must be
+                    true</span><br>
+                num4 = num2 - num1;<br>
+                console.log(`${num4} is the substraction of the first two numbers`);<br>
+                }<br>
+                else{<br>
+                num4 = num3;<br>
+                console.log(`${num4} is equal to the third number`);<br>
+                }<br><br>
+                <span class="comment">Output: 60 is equal to the third number</span>
+            </div>
+
+            <h4>Switch Statement</h4>
+            <p>For cases where you just want to set a variable to a certain choice of value or print out a particular
+                statement depending on a condition, the syntax can be a bit cumbersome, especially if you've got a large
+                number of choices.</p>
+            <p>In such a case, switch statements are your friend — they take a single expression/value as an input, and
+                then look through several choices until they find one that matches that value, executing the
+                corresponding code that goes along with it.</p>
+            <p><b>Switch Syntax</b></p>
+
+            <div class="codeExampleContainer">
+                switch (expression) {<br><br>
+                case choice1:<br>
+                <span class="comment">// run this code</span><br>
+                break;<br><br>
+
+                case choice2:<br>
+                <span class="comment">// run this code instead</span><br>
+                break;<br><br>
+
+                <span class="comment">// include as many cases as you like</span><br><br>
+
+                default:<br>
+                <span class="comment">// actually, just run this code</span><br>
+                break;<br>
+                }
+            </div>
+
+            <h4>Ternary Operator</h4>
+            <p>The ternary operator in JavaScript is a shorthand way of writing an if...else statement. It's called
+                "ternary" because it takes three operands: a condition, an expression to execute if the condition is
+                true, and an expression to execute if the condition is false. </p>
+            <p><b>Ternary operator Syntax</b></p>
+
+            <div class="codeExampleContainer">
+                condition ? run this expression if true : run this expression instead
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
