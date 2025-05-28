@@ -93,6 +93,9 @@ body{
     border-color: rgb(21, 187, 21);
     align-items: center;
     font-family: monospace;
+    overflow: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
 }
 
 .codeExampleContainer .comment{
