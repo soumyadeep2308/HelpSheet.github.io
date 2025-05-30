@@ -282,6 +282,171 @@
 
         </div>
 
+        <div class="container">
+            <h2>JavaScript Loops</h2>
+            <p>Loops offer a quick and easy way to do something repeatedly.</p>
+            <p>You can think of a loop as a computerized version of the game where you tell someone to take X steps in
+                one direction, then Y steps in another. For example, the idea "Go five steps to the east" could be
+                expressed this way as a loop:</p>
+            <div class="codeExampleContainer">
+                for (let step = 1; step &lt= 5; step++)<br>
+                {<br>
+                <span class="comment">// Runs 5 times, with values of step 1 through 5.</span><br>
+                console.log(`Walking ${step} to east`);<br>
+                }
+            </div>
+
+            <h4>Types of loops in JavaScript</h4>
+            <p>JavaScript provides several types of loops to control the flow of execution by repeatedly executing a
+                block of code.</p>
+            <ol>
+                <li>
+                    <h5>For Loop</h5>
+                    <ul>
+                        <li>Used when the number of iterations is known beforehand.</li>
+                        <li>Consists of three parts: initialization, condition, and increment/decrement.</li>
+                        <div class="codeExampleContainer">
+                            for (let i = 0; i &lt 5; i++) {<br>
+                            console.log(i);<br>
+                            }
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h5>While Loop</h5>
+                    <ul>
+                        <li>Executes a block of code as long as a specified condition is true.</li>
+                        <li>The condition is checked before each iteration.</li>
+                        <div class="codeExampleContainer">
+                            let i = 0;<br>
+                            while (i &lt 5) {<br>
+                            console.log(i);<br>
+                            i++;<br>
+                            }
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Do-While Loop</h5>
+                    <ul>
+                        <li>Similar to the while loop, but the code block is executed at least once before checking the
+                            condition.
+                        </li>
+                        <div class="codeExampleContainer">
+                            let i = 0;<br>
+                            do {<br>
+                            console.log(i);<br>
+                            i++;<br>
+                            }while(i &lt 5);
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h5>For in Loop</h5>
+                    <ul>
+                        <li>Iterates over the enumerable properties of an object.</li>
+                        <li>Useful for iterating through the keys of an object.</li>
+                        <div class="codeExampleContainer">
+                            const person = { name: 'Alice', age: 30 };<br>
+                            for (const key in person) {<br>
+                            console.log(key, person[key]);<br>
+                            }
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h5>For of Loop</h5>
+                    <ul>
+                        <li>Iterates over the values of iterable objects such as arrays, strings, maps, and sets.</li>
+                        <li>Provides a more direct way to access the values rather than indices.</li>
+                        <div class="codeExampleContainer">
+                            const arr = ['apple', 'banana', 'cherry'];<br>
+                            for (const item of arr) {<br>
+                            console.log(item);<br>
+                            }
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h5>ForEach Loop</h5>
+                    <ul>
+                        <li>Iterates over the elements of an array.</li>
+                        <li>Provides a more concise way to loop through arrays.</li>
+                        <div class="codeExampleContainer">
+                            const arr = ['apple', 'banana', 'cherry'];<br>
+                            arr.forEach(item => {<br>
+                            console.log(item);<br>
+                            });
+                        </div>
+                    </ul>
+                </li>
+            </ol>
+
+        </div>
+
+        <div class="container">
+
+            <h2>JavaScript Function</h2>
+            <p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar
+                to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to
+                qualify as a function, it should take some input and return an output where there is some obvious
+                relationship between the input and the output. To use a function, you must define it somewhere in the
+                scope from which you wish to call it.</p>
+
+            <h4>Syntax of JavaScript Function</h4>
+            <div class="codeExampleContainer">
+                function printing(){ <span class="comment">// without any parameters</span> <br>
+                console.log("Print your stuffs"); <br>
+                } <span class="comment">// Return Nothing</span>
+            </div>
+            <p>Function can also have one or more parameters, as shown below :
+            </p>
+            <div class="codeExampleContainer">
+                function addtion( Num1, Num2 ){ <span class="comment">// with parameters</span><br>
+                let result = Num1 + Num2;<br>
+                } <span class="comment">// Return Nothing</span>
+            </div>
+            <p>A function can also return a value and can be call later with passing some values to its parameters (if
+                Exists). Here are the eample : </p>
+            <div class="codeExampleContainer">
+                function Square(Number){<br>
+                return Number*Number; <span class="comment">// return the calculation/value of this function</span><br>
+                }<br><br>
+
+                console.log(Square(20)); <span class="comment">// Output : 400
+                </span>
+            </div>
+
+            <h4>JavaScript Arrow Function</h4>
+            <p>Arrow functions in JavaScript provide a more concise way to write function expressions. Introduced in
+                ES6, they offer a shorter syntax and handle the <span style="color: #d16201">this</span> keyword
+                differently than traditional functions.</p>
+            <p>Arrow functions are widely used in modern JavaScript development, especially in functional programming
+                paradigms and when working with higher-order functions.</p>
+
+            <div class="codeExampleContainer">
+                <span class="comment">// Traditional function</span><br>
+                function add(a, b) {<br>
+                return a + b;<br>
+                }<br><br>
+
+                <span class="comment">// Arrow function equivalent</span><br>
+                const addArrow = (a, b) => a + b;<br><br>
+
+                <span class="comment">// Example with multiple statements
+                </span><br>
+                const multiplyArrow = (a, b) => {<br>
+                const result = a * b;<br>
+                return result;<br>
+                };<br><br>
+
+                <span class="comment">// Example with a single parameter
+                </span><br>
+                const square = num => num * num;
+            </div>
+
+        </div>
+
     </div>
 
 </body>
